@@ -62,20 +62,34 @@ hasSearched && movies.length > 0 ? (
    </div> 
 ) : 
 hasSearched && movies.length === 0 ? (
-     <div className="d-flex justify-content-center align-items-center flex-column" style={{ marginTop: '250px' }}>
-  <div 
-    className="card p-4 border-0 shadow text-light" 
-    style={{ 
-      backgroundColor: '#0e1b2b', 
+<div
+  className="d-flex justify-content-center align-items-center flex-column px-3 my-5"
+  
+>
+  <div
+    className="card p-4 border-0 shadow text-light"
+    style={{
+      backgroundColor: '#0e1b2b',
       borderRadius: '12px',
-      minWidth: '400px' 
+      width: '400px',
+      maxWidth: '100%'
     }}
   >
     <div className="d-flex align-items-center">
-      <i className="fa-solid fa-xmark text-danger fw-bold fa-2xl me-3 "></i>
-      <div className='ms-5'>
-        <h5 className="mb-1 fw-bold text-light">Movie not found.</h5>
-        <p className="mb-0" style={{ fontSize: '13px',color:'#67696e' }}>
+      <i className="fa-solid fa-xmark text-danger fw-bold fa-2xl me-3"></i>
+
+      <div>
+        <h5 className="mb-1 fw-bold text-light">
+          Movie not found.
+        </h5>
+
+        <p
+          className="mb-0"
+          style={{
+            fontSize: '13px',
+            color: '#67696e'
+          }}
+        >
           Try searching for another movie!
         </p>
       </div>
@@ -84,9 +98,8 @@ hasSearched && movies.length === 0 ? (
 </div>
 
 
-
 ) : (
-     <div className="d-flex justify-content-center align-items-center flex-column" style={{marginTop:'250px'}}>
+     <div className="d-flex justify-content-center align-items-center flex-column text-center " style={{marginTop:'250px'}}>
        
           <h1 >Welcome to Movie Explorer!</h1>
            <h2 style={{fontWeight:'none',color:'#67696e'}}>Search your favourite films above to begin.</h2>
